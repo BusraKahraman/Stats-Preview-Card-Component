@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  gap: 0;
+  grid-template-areas: 'one' 'two';
+  place-items: center;
+  align-content: center;
+  margin: auto;
+  max-width: 375px;
+}
+
+.main {
+  background-color: $dark-desaturated-blue;
+  width: 80%;
+  text-align: center;
+  padding: 2em 0;
+
+  h1 {
+    padding: 0 2.1em;
+    margin-bottom: 1em;
+  }
+
+  .discover {
+    padding: 0 2.5em;
+    margin-bottom: 2em;
+  }
+}

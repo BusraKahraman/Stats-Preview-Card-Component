@@ -25,3 +25,23 @@
 .stat {
   color: $stat-transparent-white;
 }
+
+.inter {
+  font-family: $inter;
+}
+
+.lexend {
+  font-family: $lexend;
+}
+
+.ireg {
+  font-weight: map-get($font-weight, interRegular);
+}
+
+.bold {
+  font-weight: map-get($font-weight, interBold);
+}
+
+.lreg {
+  font-weight: map-get($font-weight, lexendRegular);
+}

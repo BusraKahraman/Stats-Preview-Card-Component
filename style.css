@@ -27,13 +27,41 @@
   color: hsla(0, 0%, 100%, 0.6);
 }
 
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.lexend {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.ireg {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.lreg {
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  font-size: 15px;
   background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5em;
 }
 
 .attribution {
@@ -43,4 +71,33 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+header {
+  width: 80%;
+}
+
+.container {
+  display: grid;
+  gap: 0;
+  grid-template-areas: "one" "two";
+  place-items: center;
+  align-content: center;
+  margin: auto;
+  max-width: 375px;
+}
+
+.main {
+  background-color: hsl(244, 38%, 16%);
+  width: 80%;
+  text-align: center;
+  padding: 2em 0;
+}
+.main h1 {
+  padding: 0 2.1em;
+  margin-bottom: 1em;
+}
+.main .discover {
+  padding: 0 2.5em;
+  margin-bottom: 2em;
 }/*# sourceMappingURL=style.css.map */
