@@ -22,7 +22,7 @@
   color: $paragraph-transparent-white;
 }
 
-.stat {
+.txt-stat {
   color: $stat-transparent-white;
 }
 
@@ -44,4 +44,8 @@
 
 .lreg {
   font-weight: map-get($font-weight, lexendRegular);
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

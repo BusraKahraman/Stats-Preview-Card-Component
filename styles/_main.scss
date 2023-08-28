@@ -1,26 +1,54 @@
 .container {
-  display: grid;
-  gap: 0;
-  grid-template-areas: 'one' 'two';
-  place-items: center;
-  align-content: center;
-  margin: auto;
-  max-width: 375px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @include responsive(769) {
+    max-width: 769px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'one two';
+    width: 100%;
+  }
 }
 
 .main {
   background-color: $dark-desaturated-blue;
-  width: 80%;
   text-align: center;
   padding: 2em 0;
+  max-width: 375px;
 
   h1 {
-    padding: 0 2.1em;
+    margin: 0 2em;
     margin-bottom: 1em;
   }
 
   .discover {
-    padding: 0 2.5em;
+    margin: 0 2em;
     margin-bottom: 2em;
+  }
+
+  .stat {
+    margin-bottom: 0.5em;
+    line-height: 1em;
+    font-size: 1.5em;
+    font-family: $inter;
+    font-weight: 900;
+    span {
+      text-transform: uppercase;
+      font-family: $lexend;
+      font-weight: map-get($map: $font-weight, $key: lexendRegular);
+      font-size: 0.825rem;
+    }
+  }
+
+  @include responsive(769) {
+    grid-area: one;
+
+    .stat-container {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      margin: 2rem;
+    }
   }
 }
